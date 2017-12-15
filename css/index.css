@@ -1,0 +1,24 @@
+.body{
+    display: grid;
+}
+.item-a {
+    grid-area:header;
+}
+.item-b {
+    grid-area:main;
+}
+.item-c {
+    grid-area:sidebar;
+}
+.item-d {
+    grid-area:footer;
+}
+
+.container{
+    grid-tamplate-colums:50px 50px 50px 50px;
+    grid-tamplate-rows: auto;
+    grid-tamplate-areas:
+    "header header header header"
+    "main main . sidebar"
+    " footer footer footer footer"
+}

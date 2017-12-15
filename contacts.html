@@ -38,20 +38,26 @@
           <img src="facebook-logo.png" alt="facebook-logo">
           <img src="insta.jpg" alt="instagram-logo">
           <img src="skype-logo.jpg" alt="skype-logo">
-      <form method="POST" action="https://formspree.io/iraknopka7@gmail.com">
+      <form id="contact-form">
           <p>Contact me right now:</p>
             <label>
-                <input type="email" name="email" value="Your email adress">
+                <input type="email" name="email" value="Your email adress" id="email" required>
             </label>
                  <br>
             <label>
-                <input type="text" name="message" value="Type me a message">
+                <input type="text" name="message" value="Type me a message" id="message" required>
             </label>
                  <br>
             <label>
                 <input type="submit" value="send">
             </label>
         </form>
+        <dialog id="thank-dialog">
+        <p>Thank you for contacting us!</p>
+    </dialog>
+    <dialog id="error-dialog">
+        <p>sorry!</p>
+    </dialog>
     </article>
     
     <article>
