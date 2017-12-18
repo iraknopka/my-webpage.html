@@ -1,24 +1,35 @@
-.body{
-    display: grid;
-}
-.item-a {
-    grid-area:header;
-}
-.item-b {
-    grid-area:main;
-}
-.item-c {
-    grid-area:sidebar;
-}
-.item-d {
-    grid-area:footer;
+#container {
+    max-width: 1000px;
 }
 
-.container{
-    grid-tamplate-colums:50px 50px 50px 50px;
-    grid-tamplate-rows: auto;
-    grid-tamplate-areas:
-    "header header header header"
-    "main main . sidebar"
-    " footer footer footer footer"
+#triangle-down {
+    margin-top: 20px;
+    margin-left: 450px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid pink;
+}
+
+#main {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#aside {
+    margin-top: 35px;
+    float: right;
+    width: 300px;
+    font-size: 20px;
+
+
+}
+
+#bike {
+    width:120px;
+    height: 90px;
+    
 }

@@ -1,13 +1,13 @@
-$(function(){
-   $('#contact-form input[type=submit]').click(sendForm); 
+$(function() {
+    $('#contact-form input[type=submit]').click(sendForm);
 });
 
 function sendForm(ev) {
-    const form  = document.getElementsByTagName('form')[0];
+    const form = document.getElementsByTagName('form')[0];
     if (form.checkValidity()) {
         ev.preventDefault();
         $.ajax({
-            url: "https://formspree.io/iraknopka7@gmail.com", 
+            url: "https://formspree.io/iraknopka7@gmail.com",
             method: "POST",
             data: {
                 email: $('#email').val(),
@@ -15,7 +15,8 @@ function sendForm(ev) {
             },
             dataType: "json"
         })
-         .done( () => $('#thank-dialog').attr('open', 'open') )
+        
+        .done( () => $('#thank-dialog').attr('open', 'open') )
          .fail( () => $('#error-dialog').attr('open', 'open') );    
     }
 }
