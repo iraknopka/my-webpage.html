@@ -5,23 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contacts.css">
 </head>
 
-<body>
+<body id="container">
     <header>
-        <img src="logo.jpg" alt="logo">
-        <img src="home.jpg" alt="ira korman">
-        <label>
-                   <input type="button" onclick="PgDn" value="click me">
-                </label>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="biography.html">Biography</a>
-            <a href="projects.html">Projects</a>
-            <a href="contacts.html">Contacts</a>
-        </nav>
-    </header>
-    <article>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="menu.html">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="biography.html">Biography</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
+                <a class="nav-item nav-link" href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/home.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/home-home.jpg" alt="Second slide">
+                </div>
+            </div>
+        </div>
+    <div id="triangle-down"></div>
+    </header> 
+    <hr>
+    <main id="main">
         <section>
             <h2>Ira Korman:</h2>
             <h2>Gmail</h2>
@@ -31,47 +67,54 @@
             <h2>Mobile number</h2>
             <p>+380985518494</p>
         </section>
-    </article>
-    <article>
-        <a href="index.html">Home</a>
-        <a href="biography.html">Biography</a>
-        <a href="projects.html">Projects</a>
-        <a href="contacts.html">Contacts</a>
-        <img src="facebook-logo.png" alt="facebook-logo">
-        <img src="insta.jpg" alt="instagram-logo">
-        <img src="skype-logo.jpg" alt="skype-logo">
+    </main>
+     <hr>
+   <footer id="footer">
+        <img src="img/br.jpg" alt="My Photo">
+    <nav>
+        <div id="contact">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+        <div id="logos">
+            <img src="img/facebook-logo.png" alt="facebook-logo">
+            <img src="img/insta.jpg" alt="instagram-logo">
+            <img src="img/skype-logo.jpg" alt="skype-logo">
+        </div>
         <form id="contact-form">
             <p>Contact me right now:</p>
             <label>
-                <input type="email" id="email" placeholder="Your email adress" id="email" required>
+                <input type="email" id="email" placeholder="Your email adress" >
             </label>
             <br>
             <label>
-                <input type="text" id="message" placeholder="Type me a message" id="message" required>
+                <input type="text" id="message" placeholder="Type me a message">
             </label>
             <br>
             <label>
                 <input type="submit" value="send">
             </label>
         </form>
-
-        <dialog id="thank-dialog">
-            <p>Thank you for contacting us!</p>
-        </dialog>
-        <dialog id="error-dialog">
-            <p>sorry!</p>
-        </dialog>
-
-    </article>
-
-    <article>
-        <img src="me.jpg" alt="My Photo">
-    </article>
-    <footer>
-        <p> ©iraknopka</p>
-    </footer>
-
+        </nav>
+        <div id="arrow-down"></div>
+        </footer>
+        <!--<id="thank-dialog">-->
+        <!--    <p>Thank you for contacting us!</p>-->
+        <!--</>-->
+        <!--<dialog id="error-dialog">-->
+        <!--    <p>sorry!</p>-->
+        <!--</dialog>-->
+        <!--</article>-->
+        
+    
+    <p> ©iraknopka</p>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/form.js"></script>
 </body>
 

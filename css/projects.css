@@ -18,10 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#aside {
-    margin-left: 10px;
-    font-size: 20px;
-}
+
 #footer{
 	border:2px solid black;
     position: relative;

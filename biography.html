@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,16 +27,23 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
     <link rel="stylesheet" href="css/biography.css">
 </head>
+
 <body id="container">
     <header>
-        <nav aria-label="breadcrumb" role="navigation">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="biography.html">Biography</a></li>
-                <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
-                <li class="breadcrumb-item"><a href="contacts.html">Contacts</a></li>
-            </ol>
-        </nav>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="menu.html">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="biography.html">Biography</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
+                <a class="nav-item nav-link" href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -46,11 +54,13 @@
                 </div>
             </div>
         </div>
-    </header>
     <div id="triangle-down"></div>
+    </header> 
+    <hr>
     <main id="main">
-        <img src="img/boards.jpg" alt="Moto Rides">
-    </main>
+ 
+        <img src="img/brs.jpg" alt="Moto Rides">
+   
     <sidebar id="aside">
         <h1>My biography</h1>
         <table>
@@ -87,19 +97,29 @@
                 <td>Great</td>
             </tr>
         </table>
-    </sidebar>
-    <article>
-        <a href="index.html">Home</a>
-        <a href="biography.html">Biography</a>
-        <a href="projects.html">Projects</a>
-        <a href="contacts.html">Contacts</a>
-        <img src="facebook-logo.png" alt="facebook-logo">
-        <img src="insta.jpg" alt="instagram-logo">
-        <img src="skype-logo.jpg" alt="skype-logo">
+    </sidebar> 
+    </main>
+    <hr>
+   <footer id="footer">
+        <img src="img/br.jpg" alt="My Photo">
+    <nav>
+        <div id="contact">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+        <div id="logos">
+            <img src="img/facebook-logo.png" alt="facebook-logo">
+            <img src="img/insta.jpg" alt="instagram-logo">
+            <img src="img/skype-logo.jpg" alt="skype-logo">
+        </div>
         <form id="contact-form">
             <p>Contact me right now:</p>
             <label>
-                <input type="email" id="email" placeholder="Your email adress">
+                <input type="email" id="email" placeholder="Your email adress" >
             </label>
             <br>
             <label>
@@ -110,21 +130,22 @@
                 <input type="submit" value="send">
             </label>
         </form>
-        <dialog id="thank-dialog">
-            <p>Thank you for contacting us!</p>
-        </dialog>
-        <dialog id="error-dialog">
-            <p>sorry!</p>
-        </dialog>
-    </article>
-
-    <article>
-        <img src="me.jpg" alt="My Photo">
-    </article>
-    <footer>
-        <p> ©iraknopka</p>
-    </footer>
+        </nav>
+        <div id="arrow-down"></div>
+        </footer>
+        <!--<id="thank-dialog">-->
+        <!--    <p>Thank you for contacting us!</p>-->
+        <!--</>-->
+        <!--<dialog id="error-dialog">-->
+        <!--    <p>sorry!</p>-->
+        <!--</dialog>-->
+        <!--</article>-->
+        
+    
+    <p> ©iraknopka</p>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/form.js"></script>
 </body>
 

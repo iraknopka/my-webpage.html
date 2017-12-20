@@ -1,5 +1,6 @@
 #container {
     max-width: 1000px;
+    margin:auto;
 }
 
 #triangle-down {
@@ -11,25 +12,60 @@
     border-right: 50px solid transparent;
     border-top: 100px solid pink;
 }
-
 #main {
-    float: left;
-    width: 20%;
+    position:relative;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#photo {
+    display: flex;
+    align-items:flex-start;
     padding: 10px;
     margin-top: 30px;
+    width:300px;
 }
 
 #aside {
-    margin-top: 35px;
-    float: right;
-    width: 300px;
     font-size: 20px;
+    width:350px;
+    
 
 
 }
+#footer{
+    border:2px solid black;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
 
-#bike {
-    width:120px;
-    height: 90px;
+#logos {
+    display:flex;
+     justify-content: space-around;
+     align-items: flex-end;
+}
+#arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid pink;
+  position: absolute;
+  left: 50%;
+}
+@media screen and (max-width:720px) {
+    #main {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    #footer {
+        display:flex;
+        flex-wrap:wrap;
     
 }

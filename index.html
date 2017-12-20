@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,16 +27,25 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body id="container">
-    <header>
-        <nav aria-label="breadcrumb" role="navigation">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="biography.html">Biography</a></li>
-                <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
-                <li class="breadcrumb-item"><a href="contacts.html">Contacts</a></li>
-            </ol>
-        </nav>
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="menu.html">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="biography.html">Biography</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
+                <a class="nav-item nav-link" href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+        
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -48,14 +58,15 @@
             </div>
         </div>
     </header>
-    <div id="triangle-down"></div>
     <main id="main">
+    <div id="triangle-down"></div>
+    <div id="photo">
         <img src="img/iride.jpg" alt="Moto Rides">
-    </main>
+    </div>
     <sidebar id="aside">
         <h1>Ira Korman</h1>
         <br>
-        <p><b>I have various experience working with teams in different sphere such 
+        <p><b>I have various experience working with teams in different spheres such 
              as healthcare (physical therapist), education (teacher and post-graduate student), and entertainment (animator for kids). 
         <br>
        I have excellent communication, coaching, and conflict management skills. I can work in stressful situations and stay cool-headed. <br>
@@ -64,24 +75,28 @@
 </b></p>
     </sidebar>
     <hr>
+    </main>
     <footer id="footer">
-<br>
+        <img src="img/br.jpg" alt="My Photo">
+    <nav>
+        <br>
+        <br>
         <div id="contact">
-            <a href="index.html">Home</a>
-            <a href="biography.html">Biography</a>
-            <a href="projects.html">Projects</a>
-            <a href="contacts.html">Contacts</a>
-        </div>
-        <div id="bike">
-            <img src="img/bike ride.jpg" alt="My Photo">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            </ul>
         </div>
         <div id="logos">
             <img src="img/facebook-logo.png" alt="facebook-logo">
             <img src="img/insta.jpg" alt="instagram-logo">
             <img src="img/skype-logo.jpg" alt="skype-logo">
         </div>
+        <br>
         <form id="contact-form">
-            <p>Contact me right now:</p>
+            <p><b>Contact me right now:</b></p>
             <label>
                 <input type="email" id="email" placeholder="Your email adress" >
             </label>
@@ -94,18 +109,23 @@
                 <input type="submit" value="send">
             </label>
         </form>
-        <dialog id="thank-dialog">
-            <p>Thank you for contacting us!</p>
-        </dialog>
-        <dialog id="error-dialog">
-            <p>sorry!</p>
-        </dialog>
-        </article>
-    </footer>
+        </nav>
+        <div id="arrow-down"></div>
+        </footer>
+        <!--<alert id="thank-dialog">-->
+        <!--    <p>Thank you for contacting us!</p>-->
+        <!--</alert>-->
+        <!--<dialog id="error-dialog">-->
+        <!--    <p>sorry!</p>-->
+        <!--</dialog>-->
+        <!--</article>-->
+        
+    
     <p> ©iraknopka</p>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="js/form.js"></script>
 </body>
+
 </html>
