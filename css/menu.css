@@ -25,10 +25,12 @@ body {
 @media screen and (max-width:720px) {
     #main {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
     }
     #footer {
-        display:flex;
-        flex-wrap:wrap;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+ 
     
-}

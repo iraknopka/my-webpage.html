@@ -71,9 +71,15 @@
      width:auto;
      
  }
+ 
+ #aside p {
+     font-size: 30px;
+ }
  #triangle-down {
-     display: flex;
-     justify-content:flex-start;
+     display: none;
+ }
+ #arrow-down{
+     display:none;
  }
 
 #main {
@@ -89,4 +95,7 @@
         width:auto;
         
     
+}
+#footer img {
+    width:100%;
 }

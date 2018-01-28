@@ -7,17 +7,19 @@ function sendForm(ev) {
     if (form.checkValidity()) {
         ev.preventDefault();
         $.ajax({
-            url: "https://formspree.io/iraknopka7@gmail.com",
-            method: "POST",
-            data: {
-                email: $('#email').val(),
-                message: $('#message').val()
-            },
-            dataType: "json"
-        })
-        
-        .done( () => $('#thank-dialog').attr('open', 'open') )
-         .fail( () => $('#error-dialog').attr('open', 'open') );    
+                url: "https://formspree.io/iraknopka7@gmail.com",
+                method: "POST",
+                data: {
+                    email: $('#email').val(),
+                    message: $('#message').val()
+                },
+                dataType: "json"
+})
+            .done( () => $('#thank-dialog').attr('show','open') )
+    
+            .fail( () => $('#error-dialog').attr('open','open') );
     }
-}
-
+}        
+            
+            
+   
