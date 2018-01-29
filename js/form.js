@@ -1,7 +1,6 @@
 $(function() {
     $('#contact-form input[type=submit]').click(sendForm);
 });
-
 function sendForm(ev) {
     const form = document.getElementsByTagName('form')[0];
     if (form.checkValidity()) {
@@ -15,11 +14,12 @@ function sendForm(ev) {
                 },
                 dataType: "json"
 })
-            .done( () => $('#thank-dialog').attr('show','open') )
-    
-            .fail( () => $('#error-dialog').attr('open','open') );
+        .done ('load', function(ev) {
+    alert('Thank you for contacting us!');
+  })
+
+  .fail ('error', function(ev) {
+    alert('Oups! Something goes wrong.');
+  });
     }
-}        
-            
-            
-   
+}      
